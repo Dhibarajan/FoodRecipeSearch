@@ -3,3 +3,7 @@
   transition: 0.9s all ease-in-out;
   transform: scale(1.2);
 } */
+
+h4 {
+  text-align: center;
+}
