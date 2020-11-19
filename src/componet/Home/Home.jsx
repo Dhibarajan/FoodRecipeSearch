@@ -2,9 +2,8 @@ import React from 'react'
 import Search from '../Search/Search';
 import Recipes from '../Recipes/Recipes';
 import Loading from '../Loading/Loading';
-import Footer from '../Footer/Footer'
+// import Footer from '../Footer/Footer'
 import axios from 'axios';
-import Ad from '../Ad/Ad'
 
 function Home() {
     const [query,setQuery] = React.useState({value:'pizza'})
@@ -32,8 +31,7 @@ function Home() {
             <Search onSubmit={onSubmit}/>
             {/* Conditional (ternary) operator */}
             {loading ? <Loading /> : <Recipes recipes={recipes} />}
-            <Ad/>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }
